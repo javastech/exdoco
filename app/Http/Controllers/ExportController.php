@@ -12,4 +12,9 @@ class ExportController extends Controller
         return $pdf->stream();
         // return $pdf->stream('invoice.pdf');
     }
+    function export_02() {
+        $pdf = Pdf::setPaper('legal')->loadView('export.export_02');
+        return $pdf->stream();
+        // return $pdf->stream('invoice.pdf');
+    }
 }
