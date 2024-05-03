@@ -14,7 +14,9 @@
         body {
             font-family: arial, sans-serif;
             color: #222;
-            font-size: 14px;
+            font-size: 12px;
+            padding: 0px 24px;
+
         }
 
         .text-center {
@@ -47,12 +49,13 @@
         .text-right {
             text-align: right;
         }
+
         .text-left {
             text-align: left;
         }
 
         h2 {
-            font-size: 25px;
+            font-size: 18px;
             line-height: 35px;
             margin: 0px 0px 50px 0px;
             padding: 0px;
@@ -75,20 +78,19 @@
             font-style: italic;
         }
 
-        .font-italic span {
+        {{--  .font-italic span {
             text-decoration: line-through;
             text-decoration-thickness: 5px;
             -moz-text-decoration-thickness: 5px;
-        }
-
-        table.type3 {
+        }  --}} 
+        table.type-2 {
             width: 100%;
             border-collapse: collapse;
-            margin-bottom: 10px;
+            
         }
 
-        table.type3 th,
-        table.type3 td {
+        table.type-2 th,
+        table.type-2 td {
             padding: 3px 5px;
             border: 1px solid #000;
             font-size: 13px;
@@ -119,14 +121,22 @@
             left: -80px;
         }
 
-        .mb-1{
+        .mb-1 {
             margin-bottom: 4px;
         }
-        .mb-2{
+
+        .mb-2 {
             margin-bottom: 8px;
         }
-        .mb-3{
+
+        .mb-3 {
             margin-bottom: 12px;
+        }
+
+        .bottom-side {
+            display: table-caption;
+            text-align: left;
+            caption-side: bottom;
         }
     </style>
 </head>
@@ -159,32 +169,33 @@
         TAHUN AJARAN 2023/2024
     </h3>
     <h3 class="text-center mb-1">Nomor : PBx/SKL/V/2024/2107111</h3>
-    
-    <p class="mb-0">Yang bertanda tangan di bawah ini Kepala Pusat Kegiatan Belajar Masyarakat (PKBM) Piwulang Becik menerangkan
+
+    <p class="mb-0">Yang bertanda tangan di bawah ini Kepala Pusat Kegiatan Belajar Masyarakat (PKBM) Piwulang Becik
+        menerangkan
         bahwa:</p>
-    <table>
+    <table class="mb-0" style="margin-bottom: 0px;">
         <tr>
-            <td>Nama</td>
+            <td width="150">Nama</td>
             <td>:</td>
             <td>Vacha Ar-Raniry</td>
         </tr>
         <tr>
-            <td>Tempat, Tanggal Lahir</td>
+            <td width="150">Tempat, Tanggal Lahir</td>
             <td>:</td>
             <td>Jakarta, 17/01/2006</td>
         </tr>
         <tr>
-            <td>Nama Orang Tua</td>
+            <td width="150">Nama Orang Tua</td>
             <td>:</td>
             <td>Calvin Iskanadar Taufik</td>
         </tr>
         <tr>
-            <td>Nomor Induk/NISN</td>
+            <td width="150">Nomor Induk/NISN</td>
             <td>:</td>
             <td>1943135/0066882057</td>
         </tr>
         <tr>
-            <td>Alamat Lembaga</td>
+            <td width="150">Alamat Lembaga</td>
             <td>:</td>
             <td>Jl. Kaplingrejo I/7, RT.09/RW.03, Kel. Gendongan, Kec.Tingkir, Kota Salatiga, Jawa Tengah.</td>
         </tr>
@@ -193,8 +204,8 @@
         Surat Keputusan Kepala PKBM
         PIWULANG BECIK Nomor: PBx/S-KEP-KELULUSAN-PAKET C/V/2024/01 tanggal 6 Mei 2024, maka yang bersangkutan
         dinyatakan:</p>
-    <h2 class="text-center font-italic mb-0">LULUS/<span>TIDAK&nbsp;LULUS</span></h2>
-    
+    <h2 class="text-center font-italic mb-0">LULUS/<s>TIDAK&nbsp;LULUS</s></h2>
+
     @php
         $kelompok_umum = [
             ['Pendidikan Agama', 90],
@@ -219,8 +230,8 @@
         ];
     @endphp
     <br>
-    <p>Dengan hasil Sebagai berikut:</p>
-    <table class="type3">
+    <table class="type-2">
+        <caption style="text-align: left">Dengan hasil Sebagai berikut:</caption>
         <tr>
             <th width="10">No</th>
             <th width="200">Mata Pelajaran</th>
@@ -261,10 +272,11 @@
             <th>92,28</th>
         </tr>
     </table>
-    <p class="mb-0">Surat Keterangan ini bersifat sementara sampai dikeluarkannya Ijazah.</p>
-    <p class="mb-2">Demikian Surat Keterangan ini diberikan agar dapat digunakan sebagiamana mestinya, apabila dikemudian hari
+    <caption style="text-align: left">Surat Keterangan ini bersifat sementara sampai dikeluarkannya
+        Ijazah.</caption>
+    <p>Demikian Surat Keterangan ini diberikan agar dapat digunakan sebagiamana mestinya, apabila dikemudian hari
         terdapat kekeliruan, maka akan dilakukan perbaikan.</p>
-    
+
     <div class="photo-signature">
         <table align="center">
             <tbody>
@@ -272,7 +284,7 @@
                     <td>
                         <div class="foto-siswa"></div>
                     </td>
-                    <td class="text-left" >
+                    <td class="text-left">
                         <div>
                             Salatiga, 17 Juli 2023<br />
                             Kepala PKBM Piwulang Becik
