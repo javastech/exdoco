@@ -115,6 +115,8 @@
             height: 110px;
             margin: -7px 35px 0px auto;
             display: block;
+            position: relative;
+            left: -80px;
         }
 
         .mb-1{
@@ -191,7 +193,7 @@
         Surat Keputusan Kepala PKBM
         PIWULANG BECIK Nomor: PBx/S-KEP-KELULUSAN-PAKET C/V/2024/01 tanggal 6 Mei 2024, maka yang bersangkutan
         dinyatakan:</p>
-    <h2 class="text-center font-italic mb-0">LULUS/<span>TIDAKLULUS</span></h2>
+    <h2 class="text-center font-italic mb-0">LULUS/<span>TIDAK&nbsp;LULUS</span></h2>
     
     @php
         $kelompok_umum = [
@@ -270,7 +272,7 @@
                     <td>
                         <div class="foto-siswa"></div>
                     </td>
-                    <td class="text-left">
+                    <td class="text-left" >
                         <div>
                             Salatiga, 17 Juli 2023<br />
                             Kepala PKBM Piwulang Becik
