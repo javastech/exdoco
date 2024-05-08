@@ -336,7 +336,7 @@
                             <div class="foto-siswa"></div>
                         </td>
                         <td class="text-center">
-                            <div>
+                            <div style="margin-bottom: 12px">
                                 Salatiga, 17 Juli 2023<br/>
                                 Kepala PKBM Piwulang Becik
                             </div>
