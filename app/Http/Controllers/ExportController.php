@@ -56,4 +56,24 @@ class ExportController extends Controller
         $pdf = Pdf::setPaper('A4', 'potrait')->loadView('mail.surat_permohonan_pindah');
         return $pdf->stream();
     }
+    function pbx_surat_mutasi()
+    {
+        $pdf = Pdf::setPaper('A4', 'potrait')->loadView('mail.surat_mutasi');
+        return $pdf->stream();
+    }
+    function pbx_surat_kelakuan_baik()
+    {
+        $pdf = Pdf::setPaper('A4', 'potrait')->loadView('mail.surat_kelakuan_baik');
+        return $pdf->stream();
+    }
+    function pbx_surat_keterangan_peringkat()
+    {
+        $pdf = Pdf::setPaper('A4', 'potrait')->loadView('mail.surat_peringkat');
+        return $pdf->stream();
+    }
+    function pbx_surat_keterangan_identitas_peserta()
+    {
+        $pdf = Pdf::setPaper('A4', 'potrait')->loadView('mail.surat_identitas_peserta');
+        return $pdf->stream();
+    }
 }

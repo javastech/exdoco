@@ -32,8 +32,12 @@ Route::get('lsp_18', [App\Http\Controllers\LspController::class, 'lsp18'] );
 Route::get('lsp_19', [App\Http\Controllers\LspController::class, 'lsp19'] );
 Route::get('lsp_20', [App\Http\Controllers\LspController::class, 'lsp20'] );
 
-Route::get('surat_diterima', [App\Http\Controllers\ExportController::class, 'pbx_surat_diterima']);
-Route::get('surat_aktif_siswa_idn', [App\Http\Controllers\ExportController::class, 'pbx_surat_aktif_siswa_idn']);
-Route::get('surat_aktif_siswa_eng', [App\Http\Controllers\ExportController::class, 'pbx_surat_aktif_siswa_eng']);
-Route::get('surat_pindah', [App\Http\Controllers\ExportController::class, 'pbx_surat_pindah']);
-Route::get('surat_permohonan_pindah', [App\Http\Controllers\ExportController::class, 'pbx_surat_permohonan_pindah']);
+Route::get('surat-diterima', [App\Http\Controllers\ExportController::class, 'pbx_surat_diterima']);
+Route::get('surat-aktif-siswa-idn', [App\Http\Controllers\ExportController::class, 'pbx_surat_aktif_siswa_idn']);
+Route::get('surat-aktif-siswa-eng', [App\Http\Controllers\ExportController::class, 'pbx_surat_aktif_siswa_eng']);
+Route::get('surat-pindah', [App\Http\Controllers\ExportController::class, 'pbx_surat_pindah']);
+Route::get('surat-permohonan-pindah', [App\Http\Controllers\ExportController::class, 'pbx_surat_permohonan_pindah']);
+Route::get('surat-mutasi', [App\Http\Controllers\ExportController::class, 'pbx_surat_mutasi']);
+Route::get('surat-kelakuan-baik', [App\Http\Controllers\ExportController::class, 'pbx_surat_kelakuan_baik']);
+Route::get('surat-keterangan-peringkat', [App\Http\Controllers\ExportController::class, 'pbx_surat_keterangan_peringkat']);
+Route::get('surat-keterangan-identitas-peserta-didik', [App\Http\Controllers\ExportController::class, 'pbx_surat_keterangan_identitas_peserta']);
